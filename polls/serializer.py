@@ -4,7 +4,7 @@ from . import models
 class BusinessSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Business
-        fields = ('id','title','description','address','employees')
+        fields = ('id','title','description','address',[])
 
 class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
